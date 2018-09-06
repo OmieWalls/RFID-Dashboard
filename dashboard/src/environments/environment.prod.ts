@@ -1,1 +1,3 @@
-export const environment = process.env.rfid-dashboard;
+export const environment = {
+  production: true
+};
