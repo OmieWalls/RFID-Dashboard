@@ -3,18 +3,23 @@ import { NgModule } from '@angular/core';
 import { MatSortModule } from '@angular/material/sort';
 import { AppComponent } from './app.component';
 import { RfidsComponent } from './rfids/rfids.component';
-import { MatTableModule } from '@angular/material';
+import { MatTableModule, MatPaginatorModule } from '@angular/material';
+import { RfidTableComponent } from './rfid-table/rfid-table.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    RfidsComponent
+    RfidsComponent,
+    RfidTableComponent
   ],
   imports: [
     BrowserModule,
     MatSortModule,
-    MatTableModule
+    MatTableModule,
+    MatPaginatorModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
