@@ -1,4 +1,4 @@
-<div class="mat-elevation-z8">
+<div class="mat-elevation-z8 rfid-table" align="center">
   <table mat-table #table [dataSource]="dataSource" matSort aria-label="Elements">
     <!-- Id Column -->
     <ng-container matColumnDef="id">
@@ -16,6 +16,26 @@
     <ng-container matColumnDef="price">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>Price</th>
       <td mat-cell *matCellDef="let row">{{row.price | currency}}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="vendor">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Vendor ID & Name</th>
+      <td mat-cell *matCellDef="let row">{{row.vendor}}</td>
+    </ng-container>
+
+    <!--<ng-container matColumnDef="vendorName">-->
+      <!--<th mat-header-cell *matHeaderCellDef mat-sort-header>Vendor Name</th>-->
+      <!--<td mat-cell *matCellDef="let row">{{row.vendorName}}</td>-->
+    <!--</ng-container>-->
+
+    <ng-container matColumnDef="riskLevel">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Risk Level</th>
+      <td mat-cell *matCellDef="let row">{{row.riskLevel}}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="dateAdded">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Date Added</th>
+      <td mat-cell *matCellDef="let row">{{row.dateAdded | date:"dd/MM/yyyy"}}</td>
     </ng-container>
 
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>

@@ -1,1 +1,8 @@
-@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import '~@angular/material/prebuilt-themes/pink-bluegrey.css';
+
+.rfid-table{
+
+}
+.title{
+  color: darkgray;
+}

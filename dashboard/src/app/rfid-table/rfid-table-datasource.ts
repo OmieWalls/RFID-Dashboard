@@ -8,30 +8,33 @@ export interface RfidTableItem {
   id: number;
   name: string;
   price: number;
+  vendor: [string, string];
+  riskLevel: string;
+  dateAdded: string;
 }
 
 // TODO: replace this with real data from your application
 const EXAMPLE_DATA: RfidTableItem[] = [
-  {id: 1, name: 'Cordless Drill', price: 31.0079},
-  {id: 2, name: 'Drill', price: 44.0026},
-  {id: 3, name: 'Combo Drill Kit', price: 56.941},
-  {id: 4, name: 'Lithium Drill', price: 69.0122},
-  {id: 5, name: 'Lithium Cordless Drill', price: 77.811},
-  {id: 6, name: 'Nest Doorbell', price: 52.0107},
-  {id: 7, name: 'Nest Camera', price: 44.0067},
-  {id: 28, name: 'Nest Doorlock', price: 33.9994},
-  {id: 9, name: 'Power Drill ', price: 58.9984},
-  {id: 10, name: 'Saw ', price: 55.1797},
-  {id: 11, name: 'Sodium', price: 55.1797},
-  {id: 12, name: 'Magnesium', price: 55.1797},
-  {id: 13, name: 'Aluminum', price: 55.1797},
-  {id: 14, name: 'Silicon', price: 55.1797},
-  {id: 15, name: 'Phosphorus', price: 55.1797},
-  {id: 16, name: 'Sulfur', price: 55.1797},
-  {id: 17, name: 'Chlorine', price: 55.1797},
-  {id: 18, name: 'Argon', price: 55.1797},
-  {id: 19, name: 'Potassium', price: 55.1797},
-  {id: 20, name: 'Calcium', price: 55.1797},
+  {id: 1, name: 'Cordless Drill', price: 31.0079, vendor:['001','Black'], riskLevel: 'Low Risk', dateAdded: '12/12/2017'},
+  {id: 2, name: 'Drill', price: 44.0026, vendor:['001','Black'], riskLevel: 'Low Risk', dateAdded: '01/02/2018'},
+  {id: 3, name: 'Combo Drill Kit', price: 56.941, vendor:['001','Black'], riskLevel: 'Low Risk', dateAdded: '01/02/2018'},
+  {id: 4, name: 'Lithium Drill', price: 69.0122, vendor:['001','Black'], riskLevel: 'Low Risk', dateAdded: '01/02/2018'},
+  {id: 5, name: 'Lithium Cordless Drill', price: 77.811, vendor:['001','Black'], riskLevel: 'Low Risk', dateAdded: '01/02/2018'},
+  {id: 6, name: 'Nest Doorbell', price: 52.0107, vendor:['001','Black'], riskLevel: 'Low Risk', dateAdded: '01/02/2018'},
+  {id: 7, name: 'Nest Camera', price: 44.0067, vendor:['001','Black'], riskLevel: 'Low Risk', dateAdded: '01/02/2018'},
+  {id: 28, name: 'Nest Doorlock', price: 33.9994,vendor:['001','Black'], riskLevel: 'Low Risk', dateAdded: '01/02/2018'},
+  {id: 9, name: 'Power Drill ', price: 58.9984, vendor:['001','Black'], riskLevel: 'Low Risk', dateAdded: '01/02/2018'},
+  {id: 10, name: 'Saw ', price: 55.1797, vendor:['001','Black'], riskLevel: 'Low Risk', dateAdded: '01/02/2018'},
+  {id: 11, name: 'Sodium', price: 55.1797,vendor:['001','Black'], riskLevel: 'Low Risk', dateAdded: '01/02/2018'},
+  {id: 12, name: 'Magnesium', price: 55.1797, vendor:['001','Black'], riskLevel: 'Low Risk', dateAdded: '01/02/2018'},
+  {id: 13, name: 'Aluminum', price: 55.1797, vendor:['001','Black'], riskLevel: 'Low Risk', dateAdded: '01/02/2018'},
+  {id: 14, name: 'Silicon', price: 55.1797, vendor:['001','Black'], riskLevel: 'Low Risk', dateAdded: '01/02/2018'},
+  {id: 15, name: 'Phosphorus', price: 55.1797, vendor:['001','Black'], riskLevel: 'Low Risk', dateAdded: '01/02/2018'},
+  {id: 16, name: 'Sulfur', price: 55.1797, vendor:['001','Black'], riskLevel: 'Low Risk', dateAdded: '01/02/2018'},
+  {id: 17, name: 'Chlorine', price: 55.1797, vendor:['001','Black'], riskLevel: 'Low Risk', dateAdded: '01/02/2018'},
+  {id: 18, name: 'Argon', price: 55.1797, vendor:['001','Black'], riskLevel: 'Low Risk', dateAdded: '01/02/2018'},
+  {id: 19, name: 'Potassium', price: 55.1797, vendor:['001','Black'], riskLevel: 'Low Risk', dateAdded: '01/02/2018'},
+  {id: 20, name: 'Calcium', price: 55.1797, vendor:['001','Black'], riskLevel: 'Low Risk', dateAdded: '01/02/2018'},
 ];
 
 /**
