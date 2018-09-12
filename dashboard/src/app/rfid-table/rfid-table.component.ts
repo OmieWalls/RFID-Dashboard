@@ -12,8 +12,8 @@ export class RfidTableComponent implements OnInit {
   @ViewChild(MatSort) sort: MatSort;
   dataSource: RfidTableDataSource;
 
-  /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
-  displayedColumns = ['id', 'name', 'price'];
+  /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */gir
+  displayedColumns = ['id', 'name', 'price', 'vendor', 'riskLevel', 'dateAdded'];
 
   ngOnInit() {
     this.dataSource = new RfidTableDataSource(this.paginator, this.sort);
